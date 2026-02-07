@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   web-staging:
     image: cicd-web-demo:staging
@@ -7,8 +5,8 @@ services:
     ports:
       - "8081:80"
 
-  web-prod:
+  web-production:
     image: cicd-web-demo:production
-    container_name: web-prod
+    container_name: web-production
     ports:
       - "8082:80"
