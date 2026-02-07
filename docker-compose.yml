@@ -1,11 +1,14 @@
+version: "3.8"
+
 services:
-web-staging:
-image: cicd-web-demo:staging
-container_name: cicd_web_staging
-ports:
-- "8081:80"
-web-production:
-image: cicd-web-demo:production
-container_name: cicd_web_production
-ports:
-- "8082:80"
+  web-staging:
+    image: cicd-web-demo:staging
+    container_name: web-staging
+    ports:
+      - "8081:80"
+
+  web-prod:
+    image: cicd-web-demo:production
+    container_name: web-prod
+    ports:
+      - "8082:80"
